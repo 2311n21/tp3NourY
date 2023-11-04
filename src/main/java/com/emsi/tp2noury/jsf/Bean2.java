@@ -14,15 +14,15 @@ import java.util.List;
  * @author mac
  *
  * backing bean pour stocker la propriété correspondant au champ de formulaire
- * "nombre"
+ * "nombre" et afficher le nombre saisi précédemment par défaut
  */
 @Named(value = "bean2")
 @RequestScoped
 public class Bean2 {
 
     private int nombre;
-
-    /**
+    
+      /**
      * Creates a new instance of Bean
      */
     public Bean2() {
@@ -44,9 +44,9 @@ public class Bean2 {
         }
         return l;
     }
-
+    
     public String afficher() {
-        return "affichage_3?nb=" + nombre + "&amp;faces-redirect=true";
-    }
+    return "affichage_3?nb="+ nombre + "&amp;faces-redirect=true";
+}
 
 }
